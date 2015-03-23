@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/notes"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Delete Notes" />
+    <item android:id="@+id/timers"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Clear Timers" />
+    <item android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Help" />
+
+</menu>

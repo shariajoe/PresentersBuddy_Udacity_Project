@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/woodbg"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:hint="Enter title: e.g. Introduction"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#8b4513"
+            android:textSize="17dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/set"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="set duration"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/hrss"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:hint="Hrs"
+                    android:textColor="#8b4513"
+                    android:textSize="15dp"
+                    android:textStyle="bold" 
+                    android:maxLength="2"/>
+
+                <EditText
+                    android:id="@+id/mins"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:hint="Min"
+                    android:textColor="#8b4513"
+                    android:textSize="15dp"
+                    android:textStyle="bold" 
+                    android:maxLength="2"/>
+
+                <EditText
+                    android:id="@+id/secs"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:hint="Sec"
+                    android:textColor="#8b4513"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:maxLength="2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_add_to_queue" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="#000000"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>
